@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        nav ul li:hover {
+            background-color: #555;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-right {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-left img {
+            height: 40px; 
+        }
+        .Reviews {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .review {
+            padding: 15px;
+            border: 1px solid black;
+        }
+        .Professor {
+            color: #555;
+            opacity: 0.33;
+        }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        #Projects, #Work-Experiance, #Education, #openSource-Work {
+            padding: 15px;
+
+        }
+        #Projects {
+            border: solid black;
+            border-width: 2px 0px 2px 2px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #Work-Experiance {
+            border: solid black;
+            border-width: 2px 0px 2px 2px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #Education {
+            border: solid black;
+            border-width: 2px 2px 2px 2px;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #openSource-Work {
+            border: solid black;
+            border-width: 0px 0px 2px 2px;
+        }
+        .project-list {
+            padding: 0;
+        }
+        .project-list > li {
+            padding-top: 15px;
+            border-bottom: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <img src="logo.png" alt="logo">
+                <li>Name</li>
+            </div>
+            <div class="nav-right">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Articles</li>
+                <li>Contact</li>
+            </div>
+        </ul>
+    </nav>
+    <header style="text-align: center; height: 20vh; margin-top: 10vh;">
+        <h1>Front-end Developer</h1>
+        <p>mainly HTML and a little CSS :)</p>
+    </header>
+    <main class="main-grid">
+        <section id="Projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li>HTML only portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product upcoming page</li>
+            </ul>
+
+        </section>
+        <section id="Work-Experiance">
+            <h2>Work-Experiance</h2>
+            <h4>roadmap.sh</h4>
+            <p>solved all the front-end projects</p>
+            <a href="https://roadmap.sh/u/sanderk1">visit my profile</a>
+
+        </section>
+        <section id="openSource-Work">            
+            <h2>openSource-Work</h2>
+            <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+            <a href="https://github.com/sanderk124">visit my github profile</a></section>
+        <section id="Education">
+            <h2>Education</h2>
+            <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Orgianized 30 sessions.
+                <br>
+                <br>
+                Courses i took:
+                <br>
+                <br>
+                <ul>
+                    <li>- Object Oriented Programming</li>
+                    <li>- Data Structures</li>
+                    <li>- Web engineering</li>
+                    <li>- Artificial Intelligence</li>
+                    <li>- Human Computer Interaction</li>
+                    <li>- Computer Graphics</li>
+                    <li>- Database Management Systems</li>
+                    <li>- Distributed Database Systems</li>
+                    <li>- Discreet Mathematics</li>
+                </ul>
+
+            </p>
+        </section>
+    </main>
+    <footer>
+        <h2 style="padding-left: 20px;">Reviews from my teachers</h2>
+        <ul class="Reviews">
+            <li class="review">
+                <h4>Sander was a brilliant student; always stood out with his assignments</h4>
+                <h4 class="Professor">Jane Doe <br>
+                    Assistent Professor
+                </h4>
+            </li>
+            <li class="review">
+                <h4>Sander was a brilliant student; always stood out with his assignments</h4>
+                <h4 class="Professor">Jane Doe <br>
+                    Assistent Professor
+                </h4>
+            </li>
+            <li class="review">
+                <h4>Sander was a brilliant student; always stood out with his assignments</h4>
+                <h4 class="Professor">Jane Doe <br>
+                    Assistent Professor
+                </h4>
+            </li>
+        </ul>
+        <h2 style="text-align: center; margin-top: 50px;">@All rights reserved 2025</h2>
+    </footer>
+</body>
+</html>
